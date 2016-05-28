@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>Learning CSS</title>
+
+	<style type="text/css">
+
+		.textOne {
+			font-size:300%;
+		}
+
+
+		.underline{
+			text-decoration: underline;
+		}
+
+		.bluebox {
+			background-color:#02E8FF;
+			width:200px;
+			height:200px;
+			left:100px;
+			z-index:1;
+			padding: 10px;
+		}
+
+		.redbox {
+			color:yellow;
+			background-color: red;
+			width: 300px;
+			height: 200px;
+			z-index:2;
+		}
+		
+		p {
+			padding:0px;
+			margin:0px;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div class="bluebox">
+		<p class="textOne underline">This text will get modified</p>
+		<p>More text</p>
+	</div>
+
+	<div class="redbox">
+		<p class="textOne">This other text will get modified</p>
+	</div>
+
+	<p class="floatleft">The <span class="underline textOne">bunny</span> is jumping</p>
+
+
+
+
+</body>
+
+
+</html>
