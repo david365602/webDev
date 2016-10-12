@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SWCSE</title>
+<meta charset='utf-8' />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Arizona Cyber Warfare Range">
+<link href='styles/fullcalendar.css' rel='stylesheet' />
+<link href='styles/fullcalendar.print.css' rel='stylesheet' media='print' />
+<link rel="stylesheet" href="styles/pure-min.css">
+<link rel="stylesheet" href="styles/grids-responsive-min.css">
+<link rel="stylesheet" href="styles/font-awesome.css">
+<link rel="stylesheet" href="styles/styles.css">
+<script src='js/moment.min.js'></script>
+<script src='js/jquery.min.js'></script>
+<script src='js/fullcalendar.min.js'></script>
+<script type='text/javascript' src='js/gcal.js'></script>
+<script>
+
+	$(document).ready(function() {
+	
+		$('#calendar').fullCalendar({
+
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,agendaWeek,agendaDay,listYear'
+			},
+
+			displayEventTime: false, // don't show the time column in list view
+
+			googleCalendarApiKey: 'AIzaSyDpZpsxVSFNja6ve1uUol81gHzbl-lAdOI',
+		
+			events: {
+				googleCalendarId: 'dcypherops.org_p7juarceu0rvnbsfbr9gs0omok@group.calendar.google.com'
+			},
+			
+			eventClick: function(event) {
+				// opens events in a popup window
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				return false;
+			},
+			
+			loading: function(bool) {
+				$('#loading').toggle(bool);
+			}
+			
+		});
+		
+	});
+
+</script>
+
+<style>
+
+	body {
+		margin: 40px 10px;
+		padding: 0;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		font-size: 14px;
+	}
+
+	#loading {
+		display: none;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+
+	#calendar {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+</style>
+</head>
+
+<body>
+	<h1>Southwest Cyber Security Events</h1>
+	<div id='loading'>loading...</div>
+	<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="">Southwest Cyber Security Events</a>
+
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Calendar</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Competitions</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Resources</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Add Event</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">About Us</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="splash-container">
+    <div class="splash">
+
+        <div id='calendar'></div>
+    </div>
+</div>
+
+<div class="content-wrapper">
+    <div class="content">
+        <h2 class="content-head is-center">Welcome To Southwest Cyber Security Events</h2>
+
+        <div class="pure-g">
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+
+                <h3 class="content-subhead">
+                    Goals
+                </h3>
+                <p>
+                    To make it easier to find Cyber events in the valley without needing to subscribe to 30 different calendars. This calendar will hopefully unify all Cyber events, thus creating a stronger workforce in tech. Additionally, it should be trivial for the new generation of Cyber Security experts to find events.
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    Recommendations
+                </h3>
+                <p>
+                    When attending any of these events, make sure to network with people. Don't run out the door people the presentation sucks. Make your time worth going to the event. 
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    Zero to Jedi
+                </h3>
+                <p>
+                    Perhaps words on the different types of ranges available. Maybe even say something about red and blue teams.
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    Play Nice
+                </h3>
+                <p>
+                    We should probably say something about how we should now attack each other because, we all respect each other and stuff
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ribbon l-box-lrg pure-g">
+        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+            <img class="pure-img-responsive" alt="File Icons" width="200" src="img/azcwr.png">
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+            <h2 class="content-head content-head-ribbon">Random Event</h2>
+
+            <p class="bar2">
+                This site was created to make it easy for security enthusiast to find events around the valley and to make them stop complaining about how they can't find any security events in the valley.
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2 class="content-head is-center">Additional stuff</h2>
+
+        <div class="pure-g">
+            <!--
+            <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+                <form class="pure-form pure-form-stacked">
+                    <fieldset>
+
+                        <label for="name">Your Name</label>
+                        <input id="name" type="text" placeholder="Your Name">
+
+
+                        <label for="email">Your Email</label>
+                        <input id="email" type="email" placeholder="Your Email">
+
+                        <label for="password">Your Password</label>
+                        <input id="password" type="password" placeholder="Your Password">
+
+                        <button type="submit" class="pure-button">Sign Up</button>
+                    </fieldset>
+                </form>
+            </div>
+            -->
+
+            <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+                <h4>Contact Us</h4>
+                <p>
+                    If there is an event missing or is incorrect please contact me immediately at david@dcypherops.org
+                </p>
+
+                <h4>Problems with the site</h4>
+                <p>
+                    Yes, the site has glitches. I will try my best to fix them as soon as possible. Don't complain about it, help me fix if you know how. Remember, I'm in IT Security not front-end web development.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer l-box is-center">
+        View the source of this layout to learn more. Made with love by the YUI Team.
+    </div>
+
+</div>
+
+</body>
+</html>
