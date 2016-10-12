@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!--yes this site has super bad optimization. I am fixing that-->
 <title>SWCSE</title>
 <meta charset='utf-8' />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Arizona Cyber Warfare Range">
 <link href='styles/fullcalendar.css' rel='stylesheet' />
 <link href='styles/fullcalendar.print.css' rel='stylesheet' media='print' />
+<link rel="stylesheet" href="styles/pure-min.css">
+<link rel="stylesheet" href="styles/grids-responsive-min.css">
+<link rel="stylesheet" href="styles/font-awesome.css">
+<link rel="stylesheet" href="styles/styles.css">
 <script src='js/moment.min.js'></script>
 <script src='js/jquery.min.js'></script>
 <script src='js/fullcalendar.min.js'></script>
@@ -68,15 +75,117 @@
 
 </style>
 </head>
+
 <body>
 	<h1>Southwest Cyber Security Events</h1>
 	<div id='loading'>loading...</div>
-	<div id='calendar'></div>
-	<a href="https://calendar.google.com/calendar/embed?src=dcypherops.org_p7juarceu0rvnbsfbr9gs0omok%40group.calendar.google.com&ctz=America/Phoenix">Subscribe to Google Calendar Here</a>
+	<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="">Southwest Cyber Security Events</a>
 
-	<p>I created this calendar because, I was getting tired of people saying there where no security events going on in the valley.</p>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="index.html" class="pure-menu-link">Home</a></li>
+            <li class="pure-menu-item"><a href="calendar.html" class="pure-menu-link">Calendar</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Competitions</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Resources</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Add Event</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">About Us</a></li>
+        </ul>
+    </div>
+</div>
 
-	<p>Contact me if you'd like to make this page look pretty.</p>
+<div class="splash-container">
+    <div class="splash">
+
+        <div id='calendar'></div>
+    </div>
+</div>
+
+<div class="content-wrapper">
+    <div class="content">
+        <h2 class="content-head is-center">Welcome To Southwest Cyber Security Events</h2>
+
+        <div class="pure-g">
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+
+                <h3 class="content-subhead">
+                    Goals
+                </h3>
+                <p>
+                    Making it easier to find Cyber events in the valley without needing to subscribe to 30 different calendars. This calendar will hopefully unify all Cyber events, thus creating a stronger workforce in tech. Additionally, it should be trivial for the new generation of Cyber Security experts to find events.
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    Recommendations
+                </h3>
+                <p>
+                    When attending any of these events, make sure to network with people. Don't run out the door because, the presentation sucked. Make your time worth going to the event and gain more knowledge from the other security experts in the room. Make yourself known! Also, do be a bully, share this calendar.
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    Play Nice
+                </h3>
+                <p>
+                    Share your event with the valley. Make your audience aware of all the other events in the valley or else <strong>I WILL FIND YOU AND I WILL ADD YOU</strong>
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    Comments 
+                </h3>
+                <p>
+                    I will try my best to keep events up to date. My email is down bellow so politely tell me if I'm doing a bad job. Thanks!
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="ribbon l-box-lrg pure-g">
+        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+            <a href="https://calendar.google.com/calendar/event?eid=NjczbzhmZXR1NThkbmE0amp2ZWd0dWw3MjQgZGN5cGhlcm9wcy5vcmdfcDdqdWFyY2V1MHJ2bmJzZmJyOWdzMG9tb2tAZw"><img class="pure-img-responsive" alt="File Icons" src="img/azcwr.png"></a>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+            <h2 class="content-head content-head-ribbon">Featured Event (October 15)<br> Intro to distributed computing (a.k.a. botnets)</h2>
+
+            <p class="bar2">
+                    
+Leveraging bad guy methodologies for good guy projects. Basically the talk will be a high level discussion about botnet methods and design concepts. Will discuss technologies used, as well as give examples of real world projects.
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2 class="content-head is-center">Additional stuff</h2>
+
+        <div class="pure-g">
+
+            <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+                <h4>Contact Us</h4>
+                <p>
+                    If there is an event missing or is incorrect please contact me immediately at david@dcypherops.org. This site is still under development
+                </p>
+
+                <!--
+                <h4>Find stuff</h4>
+                <p>
+                    thinking on what i should add here.
+                </p>
+                -->
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer l-box is-center">
+        Yes, the site has glitches. I will try my best to fix them as soon as possible. Don't complain about it, help me fix them if you know how. Remember, I'm in IT Security not front-end web development.
+        <!--Credit goes to the YUI Team for making this layout. I simply tweaked it to make all of this work.
+    </div>
+
+</div>
 
 </body>
 </html>
